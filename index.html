@@ -10,14 +10,16 @@
     <!-- Font Awesome CDN -->
 <link
 rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-/>
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 
 <!-- Devicon CDN -->
 <link
 rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.14.0/devicon.min.css"
 />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
   </head>
   <body>
@@ -319,29 +321,40 @@ href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.14.0/devicon.min.css"
         onclick="location.href='./#contact'"
       />
     </section>
-    
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
+      
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="https://danielumetor.github.io/allimages/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="dnumetor@gmail.com">dnumetor@gmail.com</a></p>
+          <img src="https://danielumetor.github.io/allimages/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:dnumetor@gmail.com">dnumetor@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="https://danielumetor.github.io/allimages/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/daniel-umetor-3aa7231aa/"  target="_blank">LinkedIn</a></p>
+          <img src="https://danielumetor.github.io/allimages/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/daniel-umetor-3aa7231aa/" target="_blank">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fas fa-phone-alt contact-icon"></i> <!-- Font Awesome Phone Icon -->
+          <p>+27 71 123 4567</p>
         </div>
       </div>
+    
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </section>
+    
+
+    
+
     <footer>
       <nav>
         <div class="nav-links-container">
